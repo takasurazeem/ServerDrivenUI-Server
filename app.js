@@ -92,9 +92,39 @@ app.get('/pet-listing', (req, res) => {
                 }
             },
             {
-                "type": "featuredImage",
-                "data": {
-                    "imageUrl": "https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1392&q=80"
+                type: 'list',
+                data: {
+                    rows: [
+                        {
+                            id: 1,
+                            title: "Fluffy",
+                            subTitle: "This is a great pet!",
+                            imageUrl: "https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1468&q=80",
+                            description: "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."
+                        },
+                        {
+                            id: 2,
+                            title: "Barnie",
+                            subTitle: "This is a great pet!"
+                        },
+                        {
+                            id: 3,
+                            title: "Cato",
+                            subTitle: "This is a great pet!",
+                            description: "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."
+                        },
+                        {
+                            id: 4,
+                            title: "Laila",
+                            subTitle: "This is a great pet!",
+                            imageUrl: "https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1468&q=80",
+                            description: "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."
+                        }
+                    ],
+                    action: {
+                        type: "push",
+                        destination: "petDetail"
+                    }
                 }
             }
         ]
