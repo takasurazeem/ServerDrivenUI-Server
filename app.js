@@ -126,6 +126,12 @@ app.get('/pet-listing', (req, res) => {
                         destination: "petDetail"
                     }
                 }
+            },
+            {
+                type: "grid",
+                data: {
+                    
+                }
             }
         ]
     }
