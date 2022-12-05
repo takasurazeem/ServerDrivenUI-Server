@@ -54,12 +54,12 @@ app.get('/pet-detail/:petId', (req, res) => {
                     text: pet.description
                 }
             },
-            // {
-            //     type: "rating",
-            //     data: {
-            //         rating: pet.rating
-            //     }
-            // }
+            {
+                type: "ratingRow",
+                data: {
+                    rating: pet.rating
+                }
+            }
         ]
     }
     res.json(model)
